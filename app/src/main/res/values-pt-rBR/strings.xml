@@ -9,4 +9,9 @@
         <string name="reset">Limpar</string>
         <string name="share">Compartilhar</string>
         <string name="ideal">Perabéns, seu peso está ideal!</string>
+        <string name="under_weight">Abaixo do peso</string>
+        <string name="normal_weight">Normal Weight</string>
+        <string name="over_weight">Class I- Overweight</string>
+        <string name="obsity">Class II - Obesity</string>
+        <string name="morbid_obesity">Class III - Morbid Obesity</string>
 </resources>
