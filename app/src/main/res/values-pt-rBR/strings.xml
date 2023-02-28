@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">BMI Calc</string>
+        <string name="title">Calculadora IMC</string>
+        <string name="wight_label">Seu peso em Kg</string>
+        <string name="height_label">Sua altura em Cm</string>
+        <string name="button_text">Calcular</string>
+        <string name="your_score">Pontuação</string>
+        <string name="reset">Limpar</string>
+        <string name="share">Compartilhar</string>
+        <string name="ideal">Perabéns, seu peso está ideal!</string>
+</resources>
