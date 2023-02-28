@@ -65,6 +65,10 @@ fun CalculatorScreen() {
         mutableStateOf(" ")
     }
 
+    var heightStyle = rememberSaveable() {
+        mutableStateOf(" ")
+    }
+
     Surface(
         modifier = Modifier
             .fillMaxSize()
@@ -109,23 +113,28 @@ fun CalculatorScreen() {
                 OutlinedTextField(
                     value = weightState.value,
                     onValueChange = {
-                        weightState.value=it
+                        weightState.value = it
                         Log.i("DS2T", it)
                     },
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(16.dp),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-                    )
+                )
                 //Texto da altura
                 Text(
-                    text = stringResource(id = R.string.height_label),
+                    text = stringResource(
+                        id = R.string.height_label
+                    ),
                     modifier = Modifier.padding(bottom = 12.dp),
                 )
                 OutlinedTextField(
-                    value = "",
-                    onValueChange = {},
+                    value = heightStyle.value,
+                    onValueChange = {
+                        heightStyle.value = it
+                    },
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(16.dp),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
                 )
                 Spacer(modifier = Modifier.height(32.dp))
                 //Botão
